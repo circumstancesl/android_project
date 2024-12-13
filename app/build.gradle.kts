@@ -1,16 +1,17 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
 
 android {
-    namespace = "com.example.android_project"
-    compileSdk = 34
+    namespace = "com.example.example"
+    compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.android_project"
+        applicationId = "com.example.example"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -37,6 +38,9 @@ android {
 
 dependencies {
 
+    implementation("com.google.code.gson:gson:2.10.1")
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")
+    implementation("org.jsoup:jsoup:1.14.3")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
