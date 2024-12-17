@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
             val client = OkHttpClient()
             val request = Request.Builder()
                 .url("https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword?keyword=$keyword")
-                .header("X-API-KEY", "xxxxx") // api-key
+                .header("X-API-KEY", "7f3bad7b-3c9a-4910-99ec-5a67c2348dce") // api-key
                 .build()
             client.newCall(request).execute()
         }

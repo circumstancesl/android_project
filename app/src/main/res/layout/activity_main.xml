@@ -9,20 +9,29 @@
         android:id="@+id/et_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Введите название" />
+        android:hint="Введите название"
+        android:textColorHint="#000000"/>
 
     <Button
         android:id="@+id/button_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Поиск" />
+        android:text="Поиск"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF5C17"
+        android:fontFamily="@font/actaywide_bold"
+        android:textSize="16dp"/>
 
     <Button
         android:id="@+id/button_favorites"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Избранное"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF5C17"
+        android:fontFamily="@font/actaywide_bold"
+        android:textSize="16dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rview"
